@@ -2,10 +2,9 @@ package weTubeBotLogic;
 
 import weTubeBotLogic.command.CommandContext;
 import weTubeBotLogic.command.ICommand;
-import weTubeBotLogic.command.commands.ComunismoCommand;
-import weTubeBotLogic.command.commands.HelpCommand;
-import weTubeBotLogic.command.commands.PingCommand;
+import weTubeBotLogic.command.commands.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
+import weTubeBotLogic.command.commands.music.*;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -20,6 +19,17 @@ public class CommandManager {
         addCommand(new PingCommand());
         addCommand(new ComunismoCommand());
         addCommand(new HelpCommand(this));
+        addCommand(new MemeCommand());
+        addCommand(new JokeCommand());
+
+        addCommand(new JoinCommand());
+        addCommand(new LeaveCommand());
+        addCommand(new PlayCommand());
+        addCommand(new StopCommand());
+        addCommand(new SkipCommand());
+        addCommand(new RepeatCommands());
+        addCommand(new NowPlayingCommand());
+        addCommand(new QueueCommand());
     }
 
     private void addCommand(ICommand cmd) {

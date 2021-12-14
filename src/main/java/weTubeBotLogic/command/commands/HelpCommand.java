@@ -6,7 +6,6 @@ import weTubeBotLogic.Config;
 import weTubeBotLogic.command.CommandContext;
 import weTubeBotLogic.command.ICommand;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class HelpCommand implements ICommand {
@@ -33,7 +32,7 @@ public class HelpCommand implements ICommand {
                     (it) -> builder.append("`").append(Config.get("prefix")).append(it).append("`\n")
             );
 
-            channel.sendMessage(builder.toString()).append("Bot criado por Adriel#4266 e logo criada por Kcetada Boy#9382").queue();
+            channel.sendMessage(builder.toString()).append("Para saber o que cada comando faz, digite:\n `we!help [comando]`\nBot criado por **Adriel#4266** e logo criada por **Kcetada Boy#9382**").queue();
             return;
         }
 
@@ -59,6 +58,6 @@ public class HelpCommand implements ICommand {
     }
 
     public List<String> getAliases(){
-        return Arrays.asList("Comandos", "ajuda");
+        return List.of("Comandos", "ajuda");
     }
 }

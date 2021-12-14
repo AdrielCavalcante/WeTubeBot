@@ -1,5 +1,8 @@
 package weTubeBotLogic;
 
+import me.duncte123.botcommons.messaging.EmbedUtils;
+import me.duncte123.botcommons.web.WebUtils;
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
@@ -12,6 +15,15 @@ import java.util.EnumSet;
 public class Bot {
 
     private Bot() throws LoginException {
+
+        WebUtils.setUserAgent("WeTubeBot - Adriel#4266");
+        EmbedUtils.setEmbedBuilder(
+                () -> new EmbedBuilder()
+                .setColor(0xFF0000)
+                .setFooter("WeTubeBot - by: Adriel#4266")
+
+        );
+
         JDABuilder.createDefault(
                 Config.get("token"),
                 GatewayIntent.GUILD_MESSAGES,
@@ -24,7 +36,7 @@ public class Bot {
                 ))
                 .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(new Listener())
-                .setActivity(Activity.watching("Glorificando o Comunismo"))
+                .setActivity(Activity.watching("A propaganda Soviética"))
                 .setStatus(OnlineStatus.ONLINE)
                 .build();
     }

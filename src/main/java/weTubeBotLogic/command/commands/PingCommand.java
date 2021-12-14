@@ -11,7 +11,7 @@ public class PingCommand implements ICommand {
         JDA jda = ctx.getJDA();
 
         jda.getRestPing().queue(
-                (ping) -> ctx.getChannel().sendMessageFormat("logic.Bot Ping: %sms\nWebSocket Ping: %sms", ping, jda.getGatewayPing()).queue()
+                (ping) -> ctx.getChannel().sendMessageFormat("Bot Ping: %sms\nWebSocket Ping: %sms", ping, jda.getGatewayPing()).queue()
         );
     }
 
