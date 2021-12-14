@@ -20,8 +20,6 @@ public class Bot {
         EmbedUtils.setEmbedBuilder(
                 () -> new EmbedBuilder()
                 .setColor(0xFF0000)
-                .setFooter("WeTubeBot - by: Adriel#4266")
-
         );
 
         JDABuilder.createDefault(

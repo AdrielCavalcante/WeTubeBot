@@ -43,7 +43,7 @@ public class SkipCommand implements ICommand {
         }
 
         musicManager.scheduler.nextTrack();
-        channel.sendMessage("A música atual foi pulada").queue();
+        channel.sendMessage("A música foi skipada \u23E9").queue();
     }
 
     @Override

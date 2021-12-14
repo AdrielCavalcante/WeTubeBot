@@ -7,7 +7,7 @@ public class ComunismoCommand implements ICommand {
 
     @Override
     public void handle(CommandContext ctx) {
-        ctx.getChannel().sendMessage("Viva ao Comunismo!").queue();
+        ctx.getChannel().sendMessage("☭ Viva ao Comunismo! ☭").queue();
     }
 
     @Override

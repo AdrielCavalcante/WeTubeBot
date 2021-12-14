@@ -44,7 +44,7 @@ public class LeaveCommand implements ICommand {
 
         audioManager.closeAudioConnection();
 
-        channel.sendMessage("Eu sai da Call, até outro dia.").queue();
+        channel.sendMessage("Até outro dia... \uD83D\uDCF4").queue();
     }
 
     @Override

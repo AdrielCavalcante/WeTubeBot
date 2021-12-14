@@ -18,9 +18,10 @@ public class CommandManager {
     public CommandManager() {
         addCommand(new PingCommand());
         addCommand(new ComunismoCommand());
-        addCommand(new HelpCommand(this));
         addCommand(new MemeCommand());
         addCommand(new JokeCommand());
+        addCommand(new HelpCommand(this));
+        addCommand(new AboutCommand());
 
         addCommand(new JoinCommand());
         addCommand(new LeaveCommand());

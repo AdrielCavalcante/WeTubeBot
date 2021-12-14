@@ -2,8 +2,9 @@ package weTubeBotLogic.command.commands.music;
 
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
+import me.duncte123.botcommons.messaging.EmbedUtils;
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.TextChannel;
-import net.dv8tion.jda.api.requests.restaction.MessageAction;
 import weTubeBotLogic.command.CommandContext;
 import weTubeBotLogic.command.ICommand;
 import weTubeBotLogic.lavaplayer.GuildMusicManager;
@@ -29,29 +30,27 @@ public class QueueCommand implements ICommand {
 
         final int trackCount = Math.min(queue.size(), 20);
         final List<AudioTrack> tracksList = new ArrayList<>(queue);
-        final MessageAction messageAction = channel.sendMessage("**Lista de músicas:\n**");
+        final EmbedBuilder embed = EmbedUtils.getDefaultEmbed().setTitle("**Lista de músicas:\n**");
 
         for (int i = 0; i < trackCount; i++) {
             final AudioTrack track = tracksList.get(i);
             final AudioTrackInfo info = track.getInfo();
 
-            messageAction.append("#")
-                         .append(String.valueOf(i + 1))
+            embed.getDescriptionBuilder().append("#")
+                         .append(i + 1)
                          .append(" `")
                          .append(info.title)
-                         .append(" por ")
+                         .append("` por *")
                          .append(info.author)
-                         .append(" [")
+                         .append("* [")
                          .append(formatTime(track.getDuration()))
-                         .append("]`\n");
+                         .append("]\n");
         }
         if (tracksList.size() > trackCount) {
-            messageAction.append("E mais **")
-                         .append(String.valueOf(tracksList.size() - trackCount))
-                         .append("** músicas na lista...");
+            embed.setFooter("E mais "+ (tracksList.size() - trackCount) +" músicas na lista...");
         }
 
-        messageAction.queue();
+        channel.sendMessageEmbeds(embed.build()).queue();
     }
 
     private String formatTime(long timeInMillis) {

@@ -1,5 +1,7 @@
 package weTubeBotLogic.command.commands;
 
+import me.duncte123.botcommons.messaging.EmbedUtils;
+import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.TextChannel;
 import weTubeBotLogic.CommandManager;
 import weTubeBotLogic.Config;
@@ -9,8 +11,6 @@ import weTubeBotLogic.command.ICommand;
 import java.util.List;
 
 public class HelpCommand implements ICommand {
-
-    //Fazer em formato de Embed no futuro
 
     private final CommandManager manager;
 
@@ -24,15 +24,18 @@ public class HelpCommand implements ICommand {
         TextChannel channel = ctx.getChannel();
 
         if (args.isEmpty()){
-            StringBuilder builder = new StringBuilder();
 
-            builder.append("Lista de comandos\n");
+            final EmbedBuilder embed = EmbedUtils.getDefaultEmbed().setTitle("**Lista de comandos**\n");
 
             manager.getCommands().stream().map(ICommand::getName).forEach(
-                    (it) -> builder.append("`").append(Config.get("prefix")).append(it).append("`\n")
+                    (it) -> embed.getDescriptionBuilder().append("*").append(Config.get("prefix")).append(it).append("*\n")
             );
 
-            channel.sendMessage(builder.toString()).append("Para saber o que cada comando faz, digite:\n `we!help [comando]`\nBot criado por **Adriel#4266** e logo criada por **Kcetada Boy#9382**").queue();
+            embed.getDescriptionBuilder().append("\n**Para saber o que cada comando faz, digite:**\n `we!help [comando]`");
+
+            embed.setFooter("WeTubeBot by: Adriel#4266");
+
+            channel.sendMessageEmbeds(embed.build()).queue();
             return;
         }
 
@@ -40,7 +43,7 @@ public class HelpCommand implements ICommand {
         ICommand command = manager.getCommand(search);
 
         if (command == null) {
-            channel.sendMessage("Nada achado para: "+ search).queue();
+            channel.sendMessage("Não achei nenhum comando com o nome: "+ search).queue();
             return;
         }
         channel.sendMessage(command.getHelp()).queue();
@@ -58,6 +61,6 @@ public class HelpCommand implements ICommand {
     }
 
     public List<String> getAliases(){
-        return List.of("Comandos", "ajuda");
+        return List.of("comandos", "ajuda");
     }
 }

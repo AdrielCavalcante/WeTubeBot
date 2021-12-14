@@ -40,7 +40,7 @@ public class RepeatCommands implements ICommand {
 
         musicManager.scheduler.repeating = newRepeating;
 
-        channel.sendMessageFormat("A música **%s** loop", newRepeating ? "entrou em" : "saiu do").queue();
+        channel.sendMessageFormat("A música **%s** loop \uD83D\uDD01", newRepeating ? "entrou em" : "saiu do").queue();
     }
 
     @Override

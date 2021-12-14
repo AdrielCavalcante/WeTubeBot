@@ -38,7 +38,7 @@ public class StopCommand implements ICommand {
         musicManager.scheduler.player.stopTrack();
         musicManager.scheduler.queue.clear();
 
-        channel.sendMessage("O Player foi parado e a Fila foi limpa.").queue();
+        channel.sendMessage("O **Player** foi parado \u274C e a **Fila** foi limpa \uD83E\uDDF9").queue();
     }
 
     @Override
