@@ -23,7 +23,7 @@ public class Bot {
         );
 
         JDABuilder.createDefault(
-                System.getenv("TOKEN"),
+                Config.get("TOKEN"),
                 GatewayIntent.GUILD_MESSAGES,
                 GatewayIntent.GUILD_VOICE_STATES
         )
