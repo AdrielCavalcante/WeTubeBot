@@ -29,7 +29,7 @@ Para adicionar o WeTubeBot ao seu server, é simples, apenas clique aqui: <a hre
 
 * PowerShell (Windows) ou Terminal (Linux).
 > ⚠️ Embora o prompt de comando do Windows possa funcionar, é melhor usar o PowerShell!
-* Você irá precisar ter [Java Development Kit](https://adoptopenjdk.net/) instalado em sua máquina. A versão mínima necessária para compilar e executar o WeTubeBot é o JDK 8.
+* Você irá precisar ter [Java Development Kit](https://adoptopenjdk.net/) instalado em sua máquina. A versão mínima necessária para compilar e executar o WeTubeBot é o JDK 11.
 * Você precisa ter o Git instalado em sua máquina.
 * Verifique se sua máquina tem a propriedade `JAVA_HOME` configurada corretamente, versões mais recentes do JDK baixadas de AdoptOpenJDK podem já ter a variável configurada corretamente. Você pode verificar se a variável está definida usando `echo $ env: JAVA_HOME` no PowerShell.
 * Se você quiser ajudar a desenvolver no WeTubeBot, ou se quiser apenas um bom IDE para Java, faça o download do [JetBrains IntelliJ IDEA] (https://www.jetbrains.com/pt-br/idea/)
