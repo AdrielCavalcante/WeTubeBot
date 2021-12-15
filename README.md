@@ -40,7 +40,14 @@ Para adicionar o WeTubeBot ao seu server, é simples, apenas clique aqui: <a hre
 git clone https://github.com/AdrielCavalcante/WeTubeBot.git
 ```
 
-### `2.` 💻 Compilando
+### `2.` ⚙️ Alterando o Token
+* Entre em Bot.java e altere o código do Token
+```java
+Config.get("token")
+``` 
+> 🔩 Não se esqueça de criar um .env com seu id de usuário e seu token!
+
+### `3.` 💻 Compilando
 * Vá para dentro da pasta do código-fonte e abra o PowerShell ou o terminal dentro dela.
 * Construa o WeTubeBot com Maven:
 ```bash
@@ -48,6 +55,6 @@ git clone https://github.com/AdrielCavalcante/WeTubeBot.git
 ```
 > 💡 Se você tiver o Maven instalado em seu computador, pode usar `mvn build` em vez de` ./mvn build`
 
-> 🛠 Caso não funcione, procure entrar em pom.xml e executar atráves da IDEA o Maven.
+> 🛠 Caso não funcione, procure entrar em pom.xml e executar atráves da IDEA, o Maven.
 
-* Pronto, você deve estar rodando já. 😄
+Pronto, você deve estar rodando já. 😄
