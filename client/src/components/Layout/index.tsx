@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "../Navbar";
+import Top from "../Top";
 import Container from "../Main";
 import Footer from "../Footer";
 
@@ -9,7 +9,7 @@ import { Flex } from "./styles";
 const Layout: React.FC = () => {
   return (
     <Flex>
-      <Navbar />
+      <Top />
       <Container />
       <Footer />
     </Flex>

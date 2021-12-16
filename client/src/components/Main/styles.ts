@@ -2,46 +2,62 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 10px 30px;
-  background-color: #FE4E50;
   height: 78vh;
 `;
 
-export const Conteudo = styled.div`
-  width: 100%;
-  margin-top: 30px;
-  padding-right: 30px;
+export const Title = styled.h2`
+  font-size: 36pt;
+  color: #0E0E10;
+  text-align: center;
+  font-weight: bold;
+  margin: .5em 0;
 `;
 
-export const Titulo = styled.h1`
-  font-size: 26pt;
-  color: #ffffe4;
-  font-weight: bolder;
-  margin-bottom: 15px;
+export const Comandos = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+`;
+
+export const Comando = styled.div`
+  background-color: #F4F4F4;
+  padding: 1.5em;
+  margin: 1em;
+`;
+
+export const Nome = styled.h5`
+  text-align: center;
+  font-size: 22pt;
+  margin-bottom: .5em;
 `;
 
 export const Descricao = styled.p`
-  font-size: 20pt;
-  color: #ffffe4;
-  margin-bottom: 45px;
+  font-size: 14pt;
+  text-align: justify;
+  margin-bottom: .5em;
+
+  span{
+    font-weight: bold;
+  }
 `;
 
-export const ButtonsArea = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin-right: 45px;
+export const Sinonimos = styled.h6`
+  font-size: 14pt;
+  margin-bottom: .5em;
+  font-weight: normal;
+
+  span{
+    font-weight: bold;
+  }
 `;
 
-export const DiscordButton = styled.button`
+export const Exemplo = styled.h6`
+  font-size: 14pt;
+  color: #FF1800;
 
-`;
-
-export const ComandosButton = styled.button`
-
-`;
-
-export const Gif = styled.div`
-  width: 50%;
-  background-color: #e32636;
-  text-align: center;
+  span{
+    color: black;
+  }
 `;
