@@ -1,46 +1,18 @@
-# Getting Started with Create React App
+<h1 align="center">☭ WeTubeBot ☭</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Programming language used: ![TypeScript](https://img.shields.io/badge/-TypeScript-%232b7489?style=flat-square&logo=TypeScript&logoColor=ffffff)
+### Framework used: ![React.js](https://img.shields.io/badge/-React.js-11232a?style=flat-square&logo=React)
+### Project hosted on: ![Vercel](https://img.shields.io/badge/-Vercel-181717?style=flat-square&logo=Vercel)
+### Text editor used: ![VSCode](http://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=ffffff)
 
-## Available Scripts
+- You need to have installed: ![Node.js](https://img.shields.io/badge/-Node.js-%23303030?style=flat-square&logo=Node.js&logoColor=3C873A) and ![Yarn](https://img.shields.io/badge/-Yarn-%23DCDCDC?style=flat-square&logo=yarn&logoColor=117cad) to run the project.
 
-In the project directory, you can run:
+#### If you want to test locally:
+```bash
+# To install all dependencies
+$ yarn
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# run the app
+$ yarn start
+```
+The application will be available in your browser, through the URL: `http://localhost:3000`
