@@ -3,7 +3,7 @@
 
 <p align="center">
 <a href="https://github.com/AdrielCavalcante/WeTubeBot/edit/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-FF0000"></a>
-<a href="#"><img src="https://img.shields.io/badge/Website-WeTubeBot-dea300.svg"></a>
+<a href="http://we-tube-bot.vercel.app/"><img src="https://img.shields.io/badge/Website-WeTubeBot-dea300.svg"></a>
 </p>
 
 <hr>
