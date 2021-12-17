@@ -50,7 +50,7 @@ public class RepeatCommands implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Coloca a música atual em um loop";
+        return "Coloca a música atual em um loop.";
     }
 
     @Override

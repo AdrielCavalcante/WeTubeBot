@@ -68,7 +68,7 @@ public class QueueCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Mostra todas músicas da lista";
+        return "Mostra todas músicas da lista.";
     }
 
     @Override

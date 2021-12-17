@@ -31,7 +31,7 @@ public class HelpCommand implements ICommand {
                     (it) -> embed.getDescriptionBuilder().append("*").append(Config.get("prefix")).append(it).append("*\n")
             );
 
-            embed.getDescriptionBuilder().append("\n**Para saber o que cada comando faz, digite:**\n `we!help [comando]`");
+            embed.getDescriptionBuilder().append("\n**Para saber o que cada comando faz, digite:**\n `we!help [comando]` ou acesse o website para ver os comandos com detalhes.");
 
             embed.setFooter("WeTubeBot by: Adriel#4266");
 

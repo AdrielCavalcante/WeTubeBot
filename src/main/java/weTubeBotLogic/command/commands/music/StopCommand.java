@@ -48,6 +48,6 @@ public class StopCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Para a música e limpa as filas";
+        return "Para a música e limpa as filas.";
     }
 }

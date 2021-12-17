@@ -44,6 +44,6 @@ public class MemeCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Mostra um meme aleatório";
+        return "Envia um meme aleatório.";
     }
 }

@@ -3,6 +3,12 @@ import React from "react";
 import { Container, Title, Comandos, Comando, Nome, Descricao, Sinonimos, Exemplo } from "./styles";
 
 const Main: React.FC = () => {
+    const comandos = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    const nome = ['ping', 'comunismo', 'meme', 'joke', 'help', 'about', 'join', 'leave', 'play', 'stop', 'skip', 'repeat', 'nowPlaying', 'queue'];
+    const funcao = ['Mostra o ping do bot para o servidor.', 'Glorifica o Comunismo para o servidor.', 'Envia um meme aleatório.', 'Envia uma piada aleatória.', 'Mostra uma lista com todos os comandos do bot.', 'Mostra as informações do Bot.', 'Faz o Bot entrar na call.', 'Faz o Bot sair da call.', 'Toca uma música', 'Para a música e limpa as filas.', 'Pula a música atual para a próxima da fila', 'Coloca a música atual em um loop', 'Mostra a música que está tocando', 'Mostra todas músicas da lista'];
+    const sinonimo = ['Não possui', 'Não possui', 'Não possui', 'piada', 'comandos, ajuda', 'sobre, info', 'Não possui', 'exit, sair', 'Não possui', 'Não possui', 'Não possui', 'loop, repetir', 'tocando, current, atual', 'playlist, lista'];
+    const exemplo = ['we!ping', 'we!comunismo', 'we!meme', 'we!joke', 'we!help', 'we!about', 'we!join', 'we!leave', 'we!play [youtube link]', 'we!stop', 'we!skip', 'we!repeat', 'we!nowPlaying', 'we!queue'];
+
     return (
         <main>
             {/*Wave*/}
@@ -10,19 +16,17 @@ const Main: React.FC = () => {
             <Container>
                 <Title>Comandos</Title>
                 <Comandos>
-                    {/*Adicionar um loop para cada Comando e fazer seus dados dinâmicos*/}
-                    <Comando>
-                        <Nome>Ping</Nome>
-                        <Descricao><span>Função: </span>Mostra o Ping do bot para o servidor.</Descricao>
-                        <Sinonimos><span>Sinônimos: </span>Não possui</Sinonimos>
-                        <Exemplo><span>Por exemplo: </span>we!ping</Exemplo>
-                    </Comando>
-                    <Comando>
-                        <Nome>Comunismo</Nome>
-                        <Descricao><span>Função: </span>Glorifica o Comunismo para o servidor.</Descricao>
-                        <Sinonimos><span>Sinônimos: </span>Não possui</Sinonimos>
-                        <Exemplo><span>Por exemplo: </span>we!comunismo</Exemplo>
-                    </Comando>
+                    {/*Adicionar um loop para cada Comando e fazer seus dados dinâmicos*/
+                    }
+                    {comandos.map((index: number) => {
+                        return (
+                            <Comando>
+                                <Nome>{nome[index]}</Nome>
+                                <Descricao><span>Função: </span>{funcao[index]}</Descricao>
+                                <Sinonimos><span>Sinônimos: </span>{sinonimo[index]}</Sinonimos>
+                                <Exemplo><span>Por exemplo: </span>{exemplo[index]}</Exemplo>
+                            </Comando>);
+                    })}   
                 </Comandos>
             </Container>
         </main>

@@ -45,7 +45,7 @@ public class JokeCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Enviar uma piada aleatória";
+        return "Envia uma piada aleatória.";
     }
 
     @Override

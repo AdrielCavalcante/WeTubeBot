@@ -53,6 +53,6 @@ public class SkipCommand implements ICommand {
 
     @Override
     public String getHelp() {
-        return "Pula a música atual para a próxima da fila";
+        return "Pula a música atual para a próxima da fila.";
     }
 }
