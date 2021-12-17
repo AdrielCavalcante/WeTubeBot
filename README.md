@@ -10,7 +10,7 @@
 
 O Youtube encerrou com a vida de diversos bots de música, mas esse momento da história não seria o fim.
 
-O WeTubeBot é a vontade de todos os bots encerrados em 1 só bot.
+O WeTubeBot é a vontade de todos os bots encerrados em 1 só bot. (Não leve nada disso a sério 😅)
 
 Escute músicas do Youtube com ele e aproveite tudo que ele pode oferecer
 
