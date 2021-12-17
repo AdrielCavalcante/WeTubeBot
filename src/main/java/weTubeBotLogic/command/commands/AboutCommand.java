@@ -17,7 +17,7 @@ public class AboutCommand implements ICommand {
         final EmbedBuilder embed = EmbedUtils.getDefaultEmbed().setTitle("**Sobre o Bot**").setDescription("O WeTubeBot é um bot feito em java com o intuito de rodar vídeos do Youtube enquanto está em call.\n"+
         "Meu Prefixo padrão é `we!`\n\n");
         embed.addField("**Gostaria de me apoiar?**","GitHub: https://github.com/AdrielCavalcante/WeTubeBot\n"
-        + "WebSite: <nenhum por enquanto>\n\n"
+        + "WebSite: https://we-tube-bot.vercel.app/\n\n"
         + "Logo criada por: *Kcetada Boy#9382*",false);
 
         embed.setFooter("WeTubeBot by: Adriel#4266");
