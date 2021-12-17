@@ -20,6 +20,8 @@ Linguagem de programaçao usada: ![Java](https://img.shields.io/badge/-Java-%23F
 
 IDEA usada: ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ-000000.svg?style=flat-square&logo=intellij-idea&logoColor=white)
 
+Host do bot: ![Heroku](https://img.shields.io/badge/-Heroku-6762A6?style=flat-square&logo=Heroku&logocolor=C9C3E6)
+
 ## 🔗 Gostaria de me adicionar?
 
 Para adicionar o WeTubeBot ao seu server, é simples, apenas clique aqui: <a href="https://discord.com/api/oauth2/authorize?client_id=919248269836714055&permissions=2150648832&scope=bot" target="_blank">➕ Add Bot</a>
