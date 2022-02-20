@@ -26,7 +26,7 @@ public class PlayCommand implements ICommand {
         final GuildVoiceState selfVoiceState = self.getVoiceState();
 
         if (!selfVoiceState.inVoiceChannel()) {
-            channel.sendMessage("Eu preciso estar em uma call para esse comando funcionar").queue();
+            channel.sendMessage("Eu preciso estar em uma call para esse comando funcionar, use we!join").queue();
             return;
         }
 
