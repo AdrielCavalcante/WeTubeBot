@@ -28,7 +28,6 @@ Para adicionar o WeTubeBot ao seu server, é simples, apenas clique aqui: <a hre
 
 ## 👨‍💻 Compilando o WeTubeBot
 
-
 * PowerShell (Windows) ou Terminal (Linux).
 > ⚠️ Embora o prompt de comando do Windows possa funcionar, é melhor usar o PowerShell!
 * Você irá precisar ter [Java Development Kit](https://adoptopenjdk.net/) instalado em sua máquina. A versão mínima necessária para compilar e executar o WeTubeBot é o JDK 11.
